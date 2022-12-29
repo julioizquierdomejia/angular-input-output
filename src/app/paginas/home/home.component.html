@@ -1,0 +1,10 @@
+<div class="container mt-5">
+    <h1>{{titulo}}</h1>
+    <button class="btn btn-danger" (click)="cambiarTitulo()">Cambiar el padre</button>
+
+    <div class="mt-5">
+        <app-hijo [subTitulo]="titulo" (nuevoTitulo)="titulo = $event" ></app-hijo>
+    </div>
+
+</div>
+
